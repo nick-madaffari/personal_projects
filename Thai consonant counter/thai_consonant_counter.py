@@ -1,15 +1,7 @@
-# On February 29th, 2020 B.C. (Before Corona) I arrived in Thailand for a 3-month-long backpacking adventure. Little did
-# I know that the world would soon change forever. As Covid-19 cases, civil unrest, and economic turmoil spiked back
-# home in the US, Covid-free Thailand was the perfect escape. 3 months became a year, and in the meantime, I decided to
-# learn some Thai and Python (arguably the weirdest combination of languages on Earth). Being an ex-engineer, I am all
-# about efficiency. So I decided to write a program that lets me practice both languages simultaneously, and also tells
-# me which consonants are most prevalent so I could better focus my efforts on learning those first. Here it is!
-
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen as uReq
 
-url = 'https://th.wikipedia.org/wiki/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B9%80%E0%B8%97%E0%B8%A8%E0%B9%84%E0%B8%97%E0' \
-      '%B8%A2 '
+url = 'https://th.wikipedia.org/wiki/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81'
 
 
 def cons_count(my_url):
