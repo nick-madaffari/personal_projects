@@ -4,11 +4,11 @@ CREATE DEFINER=`root`@`localhost` PROCEDURE `insert_weather_data`(
     country VARCHAR(45),
     state VARCHAR(45),
     city VARCHAR(45),
-    temperature INT,
-    pressure INT,
-    humidity INT,
+    temperature TINYINT,
+    pressure SMALLINT,
+    humidity TINYINT UNSIGNED,
     wind_speed DECIMAL(4,2),
-    wind_direction INT
+    wind_direction SMALLINT
 )
 BEGIN
 	INSERT INTO weather
